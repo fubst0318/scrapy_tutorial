@@ -4,7 +4,7 @@ from tutorial.items import QuoteItem
 
 class QuotesSpider(scrapy.Spider):
     name = 'quotes'  # 爬虫的名字，唯一
-    allowed_domains = ['qutoes.toscrape.com']
+    allowed_domains = ['quotes.toscrape.com']
     start_urls = ['https://quotes.toscrape.com/']
 
     def parse(self, response):
